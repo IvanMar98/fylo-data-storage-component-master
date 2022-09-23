@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url("./images/bg-mobile.png") ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(95vh - 0.1px);
+    font-size: 14px;
+}
+.options{
+    background-color: hsl(228, 56%, 26%);
+    border-radius: .5rem 6rem .5rem .5rem;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "logo logo logo"
+        "file folder download";
+    padding: 2rem 3rem 2rem 2rem;
+
+}
+#svg1{
+    
+    grid-area: logo;
+}
+#svg2{
+    grid-area: file;
+}
+#svg3{
+    grid-area: folder;
+}
+#svg4{
+    grid-area: download;
+}
+
+#svg2, #svg3, #svg4{
+    padding: 1rem;
+    background-color: hsl(229, 57%, 11%);
+    width: 57px;
+    height: 50px;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#svg1{
+    padding-bottom: .8rem;
+}
+.storage{
+    background-color: hsl(228, 56%, 26%);
+    border-radius: .5rem;
+    width: 90%;
+    margin-top: 1rem;
+    text-align: center;
+    color: hsl(243, 100%, 93%);
+    font-family: "Raleway";
+}
+.progress{
+    display: flex;
+    height: 15px;
+    border-radius: 1rem;
+    width: 85%;
+    margin: .5rem auto 0;
+    background-color: hsl(229, 57%, 11%, .5);
+}
+.progressbar{
+   background: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%)); 
+   height: 100%;
+   width: 81.5%;
+   border-radius: 1rem;
+
+}
+p{
+    padding: 1.5rem 0;
+}
+.values{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 2rem;
+}
+.values p{
+    padding: 10px 0;
+}
+.number{
+    padding: 0 2rem;
+    border-radius: .7rem;
+    background-color: #fff;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 26.5rem;
+    right: 110px;
+    font-size: x-large;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    color: hsl(229, 57%, 11%);
+}
+.number p{
+    font-size: small;
+    margin-left:1rem ;
+    color: hsl(243, 100%, 93%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
